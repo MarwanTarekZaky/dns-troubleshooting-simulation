@@ -1,0 +1,10 @@
+
+
+Issue | How to Confirm | How to Fix
+Wrong DNS | cat /etc/resolv.conf, dig | Edit /etc/resolv.conf or fix nameserver
+DNS server down | ping DNS_IP | Restart DNS server or switch DNS
+DNS bad zone | dig internal.example.com and see NXDOMAIN | Fix DNS zone record
+Firewall blocking DNS | sudo iptables -L | Adjust firewall rules
+Firewall blocking HTTP/HTTPS | curl, telnet shows no connection | Adjust firewall, open ports 80/443
+Web server down | systemctl status apache2 (or nginx) | Restart service: sudo systemctl restart apache2
+Web server misconfigured | Check config files | Correct server config, restart service

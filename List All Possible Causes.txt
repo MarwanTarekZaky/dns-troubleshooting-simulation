@@ -1,0 +1,11 @@
+Layer | Cause
+DNS | Wrong nameserver in /etc/resolv.conf
+DNS | Local DNS server down/unreachable
+DNS | Bad DNS zone entry for internal.example.com
+DNS | Firewall blocking DNS traffic
+Network | IP conflict
+Network | Wrong routing table
+Network | Firewall blocking HTTP/HTTPS
+Service | Web server not running
+Service | Web server running but bound to wrong IP
+Service | SSL misconfiguration
